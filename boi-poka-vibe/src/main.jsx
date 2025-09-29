@@ -9,6 +9,7 @@ import Root from './Components/Roots/Root';
 import ErrorPages from './Components/Error-Pages/ErrorPages';
 import Home from './Components/Home/Home';
 import Dashboard from './Components/Dashboard/Dashboard';
+import Bookdetails from './Components/BookDetails/Bookdetails';
 
 const router = createBrowserRouter([
   {
@@ -21,9 +22,14 @@ const router = createBrowserRouter([
         element:<Home></Home>
       },
       {
+      path:'booked/:bookId',
+      element:<Bookdetails></Bookdetails>
+      },
+      {
         path:'dashboard',
         element:<Dashboard></Dashboard>
-      }
+      },
+      
     ]
   },
 ]);

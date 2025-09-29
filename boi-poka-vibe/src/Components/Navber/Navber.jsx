@@ -5,8 +5,8 @@ const Navber = () => {
 
   const links = <>
    <li><NavLink to="/">Home</NavLink></li>
-   <li><a href=""> Home2 </a></li>
-   <li><a href=""> Home3 </a></li>
+   <li><a href=""> Listed Books  </a></li>
+   <li><a href=""> Pages to Read </a></li>
   </>
   return (
       <div className="navbar bg-base-100 shadow-sm">
