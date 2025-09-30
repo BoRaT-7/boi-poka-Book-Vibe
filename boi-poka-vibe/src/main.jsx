@@ -10,6 +10,10 @@ import ErrorPages from './Components/Error-Pages/ErrorPages';
 import Home from './Components/Home/Home';
 import Dashboard from './Components/Dashboard/Dashboard';
 import Bookdetails from './Components/BookDetails/Bookdetails';
+import ListedBooks from './Components/ListedBooks/ListedBooks';
+import Rechart from './Components/Rechart/Rechart';
+
+
 
 const router = createBrowserRouter([
   {
@@ -23,7 +27,16 @@ const router = createBrowserRouter([
       },
       {
       path:'booked/:bookId',
-      element:<Bookdetails></Bookdetails>
+      element:<Bookdetails></Bookdetails>,
+     
+      },
+      {
+        path:'listedBooks',
+        element:<ListedBooks></ListedBooks>
+      },
+      {
+       path:'reChart',
+       element:<Rechart></Rechart>
       },
       {
         path:'dashboard',
@@ -37,5 +50,6 @@ const router = createBrowserRouter([
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router} />
+    
   </StrictMode>,
 )
